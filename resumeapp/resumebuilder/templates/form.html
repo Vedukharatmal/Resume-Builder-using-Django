@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Form</title>
+
+    <style>
+        .topheading{
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: #F0F0F0;            
+        }
+
+        .btn1{
+                
+        }
+    </style>
+</head>
+<body>
+    <div class="topheading">
+        
+        <h1>Vedant's Resume Builder</h1>
+        <h3>Please Enter Your Details to Generate Your Resume</h3>
+    </div>
+
+    <form action="/resume/" method="post">
+
+        {% csrf_token %}
+
+    
+    
+    <!--               Personal Information               -->
+    
+    
+    <div class="form-container">
+        <h2>Personal Information</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="name">About:</label>
+            <input type="text" id="name" name="about">
+        </div>
+        <div class="form-group">
+            <label for="age">Age:
+            </label>
+            <input type="text" id="age" name="age">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+        
+        
+        <!--               Skills               -->
+        
+        <div class="form-group">
+            <label for="skills">Skills:</label>
+            <div class="om">
+                <input type="text" id="skills" name="skill1">
+                <input type="text" id="skills" name="skill2">
+                <input type="text" id="skills" name="skill3">
+                <input type="text" id="skills" name="skill4">
+                <input type="text" id="skills" name="skill5">
+            </div>
+        </div>
+        
+        
+        <!--               Educational details               -->
+        
+        <!--               Education 1               -->
+        
+        <div class="form-group">
+            <label for="degree">Graduation Details:</label>
+        </div>
+        <div class="ed">
+            <div class="form-group">
+                <label for="degree1">Name of the Degree:</label>
+                <input type="text" id="degree1" name="degree1">
+            </div>
+            <div class="form-group">
+                <label for="college1">College Name:</label>
+                <input type="text" id="college1" name="college1">
+            </div>
+        </div>
+
+<!--               Education 2               -->
+
+<div class="form-group">
+    <label for="hsc">12th:</label>
+</div>
+<div class="ed">
+    <div class="form-group">
+        <label for="degree1">Name of the Degree:</label>
+        <input type="text" id="degree1" name="degree2">
+    </div>
+    <div class="form-group">
+        <label for="college1">College Name:</label>
+        <input type="text" id="college1" name="college2">
+    </div>
+</div>
+
+<!--               Languages               -->
+
+<div class="form-group">
+    <label for="skills">Languages:</label>
+    <div class="om">
+        <input type="text" id="skills" name="lang1">
+        <input type="text" id="skills" name="lang2">
+        <input type="text" id="skills" name="lang3">
+    </div>
+</div>
+
+<!--               Project Section               -->
+
+<!--               Project 1               -->
+
+<div class="form-group">
+    <label for="eperience1">Project 1:</label>
+</div>
+<div class="com">
+    <div class="form-group">
+        <label for="company1">Project Title</label>
+        <input type="text" id="company1" name="project1">
+    </div>
+    <div>
+        <label for="post1">Duration :</label>
+        <input type="text" name="durat1" id="post1">
+    </div>
+</div>
+<div class="form-group">
+    <label for="description1">Description:</label>
+    <input type="text" name="desc1" id="duration1">
+    
+</div>
+<!--               Project 2               -->
+
+<div class="form-group">
+    <label for="eperience1">Project 1:</label>
+</div>
+<div class="com">
+    <div class="form-group">
+        <label for="company1">Project Title</label>
+        <input type="text" id="company1" name="project2">
+    </div>
+    <div>
+        <label for="post1">Duration :</label>
+        <input type="text" name="durat2" id="post1">
+    </div>
+</div>
+<div class="form-group">
+    <label for="description1">Description:</label>
+    <input type="text" name="desc2" id="duration1">
+</div>
+
+
+<div class="form-group">
+    <label for="experience1">Experience 1:</label>
+</div>
+<div class="com">
+    <div class="form-group ">
+        <label for="company1">Company Name :</label>
+        <input type="text" id="company1" name="company1">
+    </div>
+    <div class="form-group">
+        <label for="post1">Post :</label>
+        <input type="text" id="post1" name="post1">
+                    </div>
+                    <div class="form-group">
+                        <label for="duration1">Duration :</label>
+                        <input type="text" id="duration1" name="duration1">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label for="description1">Description :</label>
+                    <div class="op">
+                        <input type="text" id="duration1" name="lin11">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="experience1">Experience 2:</label>
+                </div>
+                <div class="com">
+                    <div class="form-group ">
+                        <label for="company1">Company Name :</label>
+                        <input type="text" id="company1" name="company2">
+                    </div>
+                    <div class="form-group">
+                        <label for="post1">Post :</label>
+                        <input type="text" id="post1" name="post2">
+                    </div>
+                    <div class="form-group">
+                        <label for="duration1">Duration :</label>
+                        <input type="text" id="duration1" name="duration2">
+                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description1">Description :</label>
+                    <input type="text" id="duration1" name="lin21">
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="experience1">Achievement :</label>
+                </div>
+                <div class="form-group ">
+                    <label for="company1">First :</label>
+                    <input type="text" id="company1" name="ach1">
+                </div>
+                <div class="form-group">
+                    <label for="post1">Second :</label>
+                    <input type="text" id="post1" name="ach2">
+                </div>
+                <div class="form-group">
+                    <label for="duration1">Third :</label>
+                    <input type="text" id="duration1" name="ach3">
+                </div>
+                <button type="submit" class=" btn1 ">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+    </html>
